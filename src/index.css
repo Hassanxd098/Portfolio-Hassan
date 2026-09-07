@@ -4,87 +4,122 @@
 
 @layer base {
   :root {
-    --bg-primary: #ffffff;
-    --bg-surface: #f8fafc;
-    --bg-card: rgba(255, 255, 255, 0.85);
-    --border-color: #e2e8f0;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --accent-glow: rgba(2, 132, 199, 0.15);
+    --bg-main: #ffffff;
+    --bg-surface: #f5f5f5;
+    --bg-card: #ffffff;
+    --border-main: #e5e5e5;
+    --border-subtle: #f0f0f0;
+    --text-primary: #0a0a0a;
+    --text-secondary: #525252;
+    --text-muted: #737373;
   }
 
-  .dark {
-    --bg-primary: #090d16;
-    --bg-surface: #0f172a;
-    --bg-card: rgba(15, 23, 42, 0.75);
-    --border-color: rgba(51, 65, 85, 0.6);
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-glow: rgba(56, 189, 248, 0.15);
+  html.dark {
+    --bg-main: #050505;
+    --bg-surface: #0a0a0a;
+    --bg-card: #121212;
+    --border-main: #262626;
+    --border-subtle: #171717;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a3a3a3;
+    --text-muted: #737373;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
   }
 
   body {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-main);
     color: var(--text-primary);
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: clip;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Syne', 'Inter', sans-serif;
+    letter-spacing: -0.03em;
   }
 }
 
-/* Glassmorphism utility */
-.glass-panel {
-  background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-color);
-}
-
-.glass-pill {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.dark .glass-pill {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(51, 65, 85, 0.5);
-}
-
-/* Custom glowing borders */
-.glow-border-cyan {
-  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.3);
-}
-
-.glow-border-violet {
-  box-shadow: 0 0 25px -5px rgba(139, 92, 246, 0.3);
-}
-
-/* Ambient Animated Grid Background */
-.bg-grid-pattern {
-  background-size: 40px 40px;
+/* Subtle Editorial Grid Lines (No Gradients) */
+.mono-grid-pattern {
+  background-size: 64px 64px;
   background-image: 
-    linear-gradient(to right, rgba(148, 163, 184, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(120, 120, 120, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120, 120, 120, 0.08) 1px, transparent 1px);
 }
 
-/* Custom Scrollbar */
+.dark .mono-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Fine Editorial Borders */
+.border-editorial {
+  border: 1px solid var(--border-main);
+}
+
+.border-editorial-subtle {
+  border: 1px solid var(--border-subtle);
+}
+
+/* Monochromatic Editorial Cards & Panels (NO GLASS / NO GRADIENTS / NO GLOWS) */
+.mono-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-main);
+  transition: border-color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mono-card:hover {
+  border-color: var(--text-secondary);
+}
+
+/* Editorial Underline Effect */
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--text-primary);
+  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Custom Minimal Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: var(--bg-main);
 }
 ::-webkit-scrollbar-thumb {
-  background: #334155;
-  border-radius: 4px;
+  background: var(--border-main);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0284c7;
+  background: var(--text-secondary);
 }
 
-/* Reduce motion accessibility */
+/* Accessibility reduced-motion support */
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

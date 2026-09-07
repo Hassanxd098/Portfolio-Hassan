@@ -1,0 +1,283 @@
+{
+  "profile": {
+    "name": "Hassan",
+    "title": "Full-Stack Developer",
+    "headline": "I BUILD DIGITAL SYSTEMS & SCALABLE WEB APPLICATIONS.",
+    "subheadline": "Architecting high-performance digital products using React, Node.js, Express, Redux Toolkit, and MongoDB.",
+    "bio": "Engineered over 12+ full-stack web applications and microservices with a relentless focus on clean architecture, dynamic UI performance, REST API design, and database query optimization.",
+    "availability": "Available for contracts & full-time roles",
+    "location": "Chennai / Remote",
+    "yearsExperience": "1.5+",
+    "projectsCompleted": "12+",
+    "apisDeployed": "25+",
+    "profileImage": "/images/profile.png"
+  },
+  "contact": {
+    "email": "pmhassanurrahman@gmail.com",
+    "phone": "+918754938757",
+    "whatsapp": "+918754938757",
+    "whatsappMessage": "Hi Hassan, I came across your portfolio and would like to discuss a project.",
+    "github": "https://github.com/hassan-dev",
+    "linkedin": "https://linkedin.com/in/hassan-dev",
+    "location": "Chennai, Tamil Nadu, India"
+  },
+  "resume": {
+    "filename": "Hassan-Resume.pdf",
+    "url": "/resume/Hassan-Resume.pdf"
+  },
+  "disciplines": [
+    {
+      "title": "Frontend Engineering",
+      "description": "Building reactive, accessible, high-performance UI systems using React.js, TypeScript, Tailwind CSS, Framer Motion, and GSAP."
+    },
+    {
+      "title": "Backend Engineering",
+      "description": "Designing modular REST API microservices with Node.js and Express.js, featuring rate limiting, CORS configuration, and security headers."
+    },
+    {
+      "title": "State Management",
+      "description": "Orchestrating global frontend application state using Redux Toolkit slices, RTK Query caching, and React Context API."
+    },
+    {
+      "title": "Database Architecture",
+      "description": "Modeling document schemas, query indexes, document aggregations, and data validation using MongoDB Atlas and Mongoose."
+    },
+    {
+      "title": "API Gateway & Security",
+      "description": "Implementing JWT authentication token rotation, input sanitization, Helmet headers, and express-rate-limit middleware."
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Achieving sub-100ms API response latency and 98+ Lighthouse Web Vitals scores through code splitting and memoization."
+    },
+    {
+      "title": "Accessibility & UI/UX",
+      "description": "Crafting keyboard-navigable WCAG-compliant interface layouts with reduced-motion support and minimal Swiss design aesthetics."
+    }
+  ],
+  "projects": [
+    {
+      "id": "missile-health",
+      "title": "MISSILE HEALTH",
+      "subtitle": "Enterprise Healthcare Management & Diagnostic Platform",
+      "category": "Full-Stack System",
+      "featured": true,
+      "year": "2026",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=85",
+      "description": "Full-stack healthcare management suite featuring electronic health records (EHR), real-time doctor appointment scheduling, prescription tracking, and AI-driven clinical symptom triage.",
+      "technologies": ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Mongoose", "REST API"],
+      "github": "https://github.com/hassan-dev/missile-health-platform",
+      "live": "https://missile-health-demo.example.com",
+      "metrics": {
+        "lighthouse": "98/100",
+        "latency": "<120ms API Response",
+        "impact": "65% Faster Patient Check-In"
+      },
+      "caseStudy": {
+        "problem": "Healthcare clinics suffered from queue bottlenecks due to fragmented legacy desktop record management systems.",
+        "solution": "Built an asynchronous MERN web application using Redux Toolkit for complex UI state synchronization and Express REST controllers backed by MongoDB indexing.",
+        "architecture": [
+          "React.js Single Page UI + Redux Store Slices",
+          "Express API Gateway + Helmet & Rate-Limiter Middleware",
+          "Mongoose Aggregation Pipeline for EHR Searching",
+          "JWT Token Authentication with HTTP-Only Cookie Storage"
+        ],
+        "results": [
+          "Reduced patient wait times by 65% across pilot clinics",
+          "Processed 20,000+ EHR queries with zero database connection pool exhaustion"
+        ]
+      }
+    },
+    {
+      "id": "ai-symptom-checker",
+      "title": "AI SYMPTOM CHECKER",
+      "subtitle": "Intelligent Clinical Triage Microservice",
+      "category": "AI & Backend",
+      "featured": true,
+      "year": "2026",
+      "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1600&q=85",
+      "description": "AI-driven REST microservice delivering structured medical triage recommendations, risk evaluation, and emergency referral protocols.",
+      "technologies": ["Node.js", "Express", "MongoDB", "Gemini API", "React", "Tailwind CSS"],
+      "github": "https://github.com/hassan-dev/ai-symptom-checker-api",
+      "live": "https://ai-symptom-checker-demo.example.com",
+      "metrics": {
+        "accuracy": "94% Clinical Protocol Alignment",
+        "streaming": "<800ms First Byte",
+        "security": "Zero Unconsented PHI Storage"
+      },
+      "caseStudy": {
+        "problem": "Patients lacked rapid, reliable guidance for classifying acute versus routine symptoms before seeking in-person care.",
+        "solution": "Engineered an Express API integrating structured LLM evaluation prompts with strict Zod validation schemas.",
+        "architecture": [
+          "React Interactive Chat Interface",
+          "Express.js Service Router & Request Sanitizer",
+          "Structured Generative AI Prompt Pipeline",
+          "MongoDB Audit Logging Engine"
+        ],
+        "results": [
+          "Achieved 94% alignment with standard medical triage guidelines",
+          "Handled 500+ simultaneous evaluation requests without degradation"
+        ]
+      }
+    },
+    {
+      "id": "devscale-analytics",
+      "title": "DEVSCALE ANALYTICS",
+      "subtitle": "High-Performance REST API & Metric Tracker",
+      "category": "SaaS Platform",
+      "featured": true,
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=85",
+      "description": "Real-time backend metrics monitoring dashboard for inspecting endpoint latencies, error distributions, active JWT tokens, and database throughput.",
+      "technologies": ["React", "Redux Toolkit", "TypeScript", "Node.js", "Express", "MongoDB"],
+      "github": "https://github.com/hassan-dev/devscale-saas-analytics",
+      "live": "https://devscale-demo.example.com",
+      "metrics": {
+        "framerate": "60 FPS Render Loop",
+        "throughput": "10,000 Events/Sec",
+        "uptime": "99.99%"
+      },
+      "caseStudy": {
+        "problem": "Engineering teams lacked real-time visibility into microservice latency spikes and failed authorization events.",
+        "solution": "Constructed a custom SVG metric visualization engine powered by RTK Query caching and Express WebSocket event streams.",
+        "architecture": [
+          "React + TypeScript Dashboard UI",
+          "Redux Toolkit Store with RTK Query API Caching",
+          "Express.js Event Dispatcher Server",
+          "MongoDB Time-series Collections"
+        ],
+        "results": [
+          "Monitored 12 internal microservices with zero frame rate drops",
+          "Identified and mitigated 3 major backend latency bottlenecks prior to production releases"
+        ]
+      }
+    },
+    {
+      "id": "nexus-gateway",
+      "title": "NEXUS API GATEWAY",
+      "subtitle": "Enterprise REST API & Security Proxy",
+      "category": "Backend Microservice",
+      "featured": false,
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=85",
+      "description": "Production-grade Express REST gateway providing JWT token rotation, IP rate limiting, security headers, and centralized JSON audit logs.",
+      "technologies": ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "REST API"],
+      "github": "https://github.com/hassan-dev/nexus-api-gateway",
+      "live": "https://nexus-gateway-demo.example.com",
+      "metrics": {
+        "overhead": "<5ms Proxy Latency",
+        "security": "Grade A+ Security Header Score",
+        "blocked": "50,000+ Malicious Rejections"
+      },
+      "caseStudy": {
+        "problem": "Distributed API endpoints were vulnerable to rate limit flooding and inconsistent authentication headers.",
+        "solution": "Architected a unified Express middleware proxy with automated CORS headers, Helmet suite enforcement, and structured JSON logs.",
+        "architecture": [
+          "Express API Proxy Router",
+          "JWT & RBAC Middleware Handler",
+          "Rate Limiter & IP Throttler",
+          "MongoDB Audit Trail Log Database"
+        ],
+        "results": [
+          "Blocked 50,000+ malicious brute-force attempts in load testing",
+          "Unified authentication logic across 4 distinct web applications"
+        ]
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "React.js",
+      "category": "Frontend",
+      "level": "Advanced",
+      "description": "Custom hooks, Virtual DOM performance tuning, dynamic layouts, component memoization, and complex UI state orchestration."
+    },
+    {
+      "name": "JavaScript (ES6+)",
+      "category": "Frontend",
+      "level": "Advanced",
+      "description": "Asynchronous event loops, Promises, closures, functional array pipelines, DOM manipulation, and ES modules."
+    },
+    {
+      "name": "TypeScript",
+      "category": "Frontend / Backend",
+      "level": "Intermediate",
+      "description": "Strict type interfaces, generic constraints, React prop type enforcement, and REST API payload types."
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "level": "Advanced",
+      "description": "Utility-first design systems, responsive grid systems, strict monochrome typography, and custom utility classes."
+    },
+    {
+      "name": "Redux Toolkit",
+      "category": "State Management",
+      "level": "Advanced",
+      "description": "createSlice state reducers, createAsyncThunk async handlers, RTK Query API caching, and state normalization."
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "level": "Advanced",
+      "description": "Non-blocking event-driven I/O, file streams, npm package ecosystem, process execution, and environment configuration."
+    },
+    {
+      "name": "Express.js",
+      "category": "Backend",
+      "level": "Advanced",
+      "description": "REST route versioning, custom middleware chains, JWT authentication, rate limiting, and centralized error handling."
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database",
+      "level": "Intermediate",
+      "description": "Document collection architecture, compound index optimization, aggregation pipelines, and cloud MongoDB Atlas deployments."
+    },
+    {
+      "name": "Mongoose",
+      "category": "Database",
+      "level": "Advanced",
+      "description": "Schema definition, validation rules, model methods, population references, and lifecycle pre/post hooks."
+    },
+    {
+      "name": "REST API",
+      "category": "Architecture",
+      "level": "Advanced",
+      "description": "HTTP method semantics, status code standards, query pagination, payload validation, and clean endpoint design."
+    },
+    {
+      "name": "Git & GitHub",
+      "category": "Tools",
+      "level": "Advanced",
+      "description": "Branching strategies, pull request reviews, commit squashing, tag versioning, and repository workflows."
+    }
+  ],
+  "experience": [
+    {
+      "company": "Colan Infotech",
+      "role": "Full-Stack Developer",
+      "period": "July 2025 - Present",
+      "year": "2026",
+      "type": "Full-Time (promoted Nov 2025) | Intern (July - Nov 2025)",
+      "highlights": [
+        "Promoted from Intern to Full-Time Developer following outstanding technical delivery across full-stack MERN projects.",
+        "Architecting and implementing modular REST APIs using Express.js and MongoDB with Mongoose document modeling.",
+        "Developing responsive web interfaces using React.js, Redux Toolkit, and Tailwind CSS adhering to accessibility standards.",
+        "Engineered patient EHR management microservices, reducing query latency through targeted database indexing."
+      ]
+    },
+    {
+      "company": "Aspirasys",
+      "role": "Full-Stack Developer",
+      "period": "Nov 2024 - June 2025",
+      "year": "2025",
+      "type": "On-site (7 Months)",
+      "highlights": [
+        "Built single-page web application modules using React.js, ES6+ JavaScript, and RESTful API integrations.",
+        "Designed Mongoose database schemas and implemented Express controller business logic for client dashboards.",
+        "Refactored legacy web application components into modular, reusable React functional component trees."
+      ]
+    }
+  ]
+}

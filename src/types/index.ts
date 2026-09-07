@@ -13,17 +13,26 @@ export interface ProjectCaseStudy {
 export interface Project {
   id: string;
   title: string;
-  slug: string;
+  slug?: string;
   subtitle: string;
   description: string;
-  problemSolved: string;
-  category: 'All' | 'React' | 'Node.js' | 'MongoDB' | 'AI' | 'Full Stack';
+  problemSolved?: string;
+  category: string;
   featured: boolean;
+  year?: string;
   image: string;
   technologies: string[];
-  githubUrl: string;
-  liveUrl: string;
-  caseStudy: ProjectCaseStudy;
+  githubUrl?: string;
+  liveUrl?: string;
+  github?: string;
+  live?: string;
+  metrics?: {
+    lighthouse?: string;
+    latency?: string;
+    impact?: string;
+    [key: string]: any;
+  };
+  caseStudy?: ProjectCaseStudy;
 }
 
 export interface Skill {

@@ -2,19 +2,19 @@ import { Project, Skill, Experience, GitHubRepo } from '../types';
 
 export const DEVELOPER_PROFILE = {
   name: 'Hassan',
-  title: 'Full-Stack Developer & Senior Software Engineer',
+  title: 'Full-Stack Developer & Software Engineer',
   tagline: 'I design and build scalable, high-performance web applications using React, Node.js, Express, MongoDB, and modern engineering practices.',
   availableForWork: true,
   statusMessage: 'Building production-grade full-stack & AI applications...',
-  yearsExperience: 5,
-  projectsBuiltCount: 24,
-  technologiesCount: 18,
-  apisCreatedCount: 45,
-  location: 'Remote / Global',
+  yearsExperience: 1.3,
+  projectsBuiltCount: 12,
+  technologiesCount: 15,
+  apisCreatedCount: 25,
+  location: 'Colan Infotech | Aspirasys',
   githubUrl: 'https://github.com/hassan-dev',
   linkedinUrl: 'https://linkedin.com/in/hassan-dev',
-  email: 'hassan.dev@example.com',
-  whatsappNumber: '+1234567890',
+  email: 'pmhassanurrahman@gmail.com',
+  whatsappNumber: '8754938757',
   resumeUrl: '#resume',
 };
 
@@ -128,87 +128,69 @@ export const INITIAL_PROJECTS: Project[] = [
 ];
 
 export const INITIAL_SKILLS: Skill[] = [
-  // Frontend
-  { id: 's1', name: 'React.js', category: 'Frontend', level: 95, experienceYears: 5, description: 'Component lifecycle, Hooks, Concurrent Mode, Virtual DOM performance optimization, custom hook abstractions.', iconName: 'Atom', projectsUsing: ['Missile Health', 'AI Symptom Checker', 'DevScale Analytics'], relatedSkills: ['TypeScript', 'Redux Toolkit', 'JavaScript', 'Next.js'], featured: true },
-  { id: 's2', name: 'TypeScript', category: 'Frontend', level: 90, experienceYears: 4, description: 'Strict type safety, generics, utility types, interface contracts, seamless integration with React & Express.', iconName: 'FileCode', projectsUsing: ['Missile Health', 'DevScale Analytics'], relatedSkills: ['React.js', 'JavaScript', 'Node.js'], featured: true },
-  { id: 's3', name: 'JavaScript (ES6+)', category: 'Frontend', level: 96, experienceYears: 6, description: 'Asynchronous event loop, promises, async/await, closures, prototypes, DOM manipulation, functional programming.', iconName: 'Code', projectsUsing: ['All Projects'], relatedSkills: ['React.js', 'Node.js', 'TypeScript'], featured: true },
-  { id: 's4', name: 'Tailwind CSS', category: 'Frontend', level: 92, experienceYears: 4, description: 'Utility-first styling, design system tokenization, dark mode support, responsive layout grids, glassmorphism.', iconName: 'Palette', projectsUsing: ['Missile Health', 'AI Symptom Checker'], relatedSkills: ['CSS3', 'React.js'], featured: false },
+  // Frontend (Intermediate)
+  { id: 's1', name: 'React.js', category: 'Frontend', level: 82, experienceYears: 1.3, description: 'Component state, custom hooks, Virtual DOM performance optimization, Redux integrations, and responsive UI building.', iconName: 'Atom', projectsUsing: ['Missile Health', 'AI Symptom Checker', 'DevScale Analytics'], relatedSkills: ['TypeScript', 'Redux Toolkit', 'JavaScript'], featured: true },
+  { id: 's2', name: 'JavaScript (ES6+)', category: 'Frontend', level: 84, experienceYears: 1.3, description: 'Async/await promises, ES6 syntax, event loops, DOM manipulations, closures, and functional array methods.', iconName: 'Code', projectsUsing: ['All Projects'], relatedSkills: ['React.js', 'Node.js', 'TypeScript'], featured: true },
+  { id: 's3', name: 'TypeScript', category: 'Frontend', level: 76, experienceYears: 1.0, description: 'Type interfaces, type safety in React props, API response interfaces, and strict build validation.', iconName: 'FileCode', projectsUsing: ['Missile Health', 'DevScale Analytics'], relatedSkills: ['React.js', 'JavaScript'], featured: true },
+  { id: 's4', name: 'Tailwind CSS', category: 'Frontend', level: 85, experienceYears: 1.3, description: 'Utility-first CSS styling, flexbox/grid layouts, dark mode support, and responsive breakpoint design.', iconName: 'Palette', projectsUsing: ['Missile Health', 'AI Symptom Checker'], relatedSkills: ['CSS3', 'React.js'], featured: false },
 
-  // Backend
-  { id: 's5', name: 'Node.js', category: 'Backend', level: 94, experienceYears: 5, description: 'Non-blocking I/O event driven architecture, stream processing, native module management, REST API microservices.', iconName: 'Server', projectsUsing: ['Missile Health', 'AI Symptom Checker', 'Nexus Gateway'], relatedSkills: ['Express.js', 'MongoDB', 'REST APIs'], featured: true },
-  { id: 's6', name: 'Express.js', category: 'Backend', level: 95, experienceYears: 5, description: 'Middleware orchestration, router versioning, error handling, validation pipelines, JWT authentication, rate limiting.', iconName: 'Cpu', projectsUsing: ['All Backend Services'], relatedSkills: ['Node.js', 'REST APIs', 'MongoDB'], featured: true },
-  { id: 's7', name: 'REST APIs', category: 'Backend', level: 96, experienceYears: 5, description: 'HATEOAS, standard status codes, payload pagination, validation filtering, open API specification, version control.', iconName: 'Globe', projectsUsing: ['All Projects'], relatedSkills: ['Express.js', 'GraphQL', 'JSON'], featured: true },
-  { id: 's8', name: 'GraphQL', category: 'Backend', level: 85, experienceYears: 3, description: 'Schema declaration, resolvers, queries, mutations, subscriptions, Apollo Server integration.', iconName: 'Share2', projectsUsing: ['Missile Health'], relatedSkills: ['Node.js', 'REST APIs'], featured: false },
+  // Backend (Intermediate)
+  { id: 's5', name: 'Node.js', category: 'Backend', level: 80, experienceYears: 1.3, description: 'Asynchronous event driven I/O, npm package management, file streams, and REST API server development.', iconName: 'Server', projectsUsing: ['Missile Health', 'AI Symptom Checker', 'Nexus Gateway'], relatedSkills: ['Express.js', 'MongoDB', 'REST APIs'], featured: true },
+  { id: 's6', name: 'Express.js', category: 'Backend', level: 82, experienceYears: 1.3, description: 'Route versioning, custom middleware orchestration, JWT authentication, rate limiting, and central error handlers.', iconName: 'Cpu', projectsUsing: ['All Backend Services'], relatedSkills: ['Node.js', 'REST APIs', 'MongoDB'], featured: true },
+  { id: 's7', name: 'REST APIs', category: 'Backend', level: 85, experienceYears: 1.3, description: 'HTTP method verbs, status codes, query pagination, payload validation, and client-server data exchange.', iconName: 'Globe', projectsUsing: ['All Projects'], relatedSkills: ['Express.js', 'Node.js', 'JSON'], featured: true },
+  { id: 's8', name: 'GraphQL', category: 'Backend', level: 70, experienceYears: 0.8, description: 'GraphQL queries, schemas, mutations, and API integrations.', iconName: 'Share2', projectsUsing: ['Missile Health'], relatedSkills: ['Node.js', 'REST APIs'], featured: false },
 
-  // Database
-  { id: 's9', name: 'MongoDB', category: 'Database', level: 92, experienceYears: 5, description: 'Document schema design, index optimization, aggregation pipelines, replica sets, Atlas management.', iconName: 'Database', projectsUsing: ['Missile Health', 'AI Symptom Checker', 'Nexus Gateway'], relatedSkills: ['Mongoose', 'Node.js', 'Express.js'], featured: true },
-  { id: 's10', name: 'Mongoose', category: 'Database', level: 94, experienceYears: 5, description: 'Schema validation rules, middleware hooks, population references, virtual getters, static model methods.', iconName: 'Layers', projectsUsing: ['Missile Health', 'AI Symptom Checker'], relatedSkills: ['MongoDB', 'Node.js'], featured: true },
+  // Database (Intermediate)
+  { id: 's9', name: 'MongoDB', category: 'Database', level: 78, experienceYears: 1.3, description: 'Document collection design, query indexing, MongoDB Atlas cloud deployment, and basic aggregations.', iconName: 'Database', projectsUsing: ['Missile Health', 'AI Symptom Checker', 'Nexus Gateway'], relatedSkills: ['Mongoose', 'Node.js', 'Express.js'], featured: true },
+  { id: 's10', name: 'Mongoose', category: 'Database', level: 80, experienceYears: 1.3, description: 'Schema declarations, validation rules, model CRUD methods, populate references, and middleware hooks.', iconName: 'Layers', projectsUsing: ['Missile Health', 'AI Symptom Checker'], relatedSkills: ['MongoDB', 'Node.js'], featured: true },
 
-  // State Management
-  { id: 's11', name: 'Redux Toolkit', category: 'State', level: 94, experienceYears: 4, description: 'createSlice, createAsyncThunk, RTK Query caching, middleware selectors, state normalization, devtools.', iconName: 'Workflow', projectsUsing: ['Missile Health', 'DevScale Analytics'], relatedSkills: ['React.js', 'TypeScript', 'Context API'], featured: true },
-  { id: 's12', name: 'Context API', category: 'State', level: 90, experienceYears: 5, description: 'Lightweight global context provider, custom hooks, reducer dispatching, theme & auth state management.', iconName: 'ToggleLeft', projectsUsing: ['Portfolio UI', 'AI Symptom Checker'], relatedSkills: ['React.js', 'Redux Toolkit'], featured: false },
+  // State Management (Intermediate)
+  { id: 's11', name: 'Redux Toolkit', category: 'State', level: 80, experienceYears: 1.0, description: 'createSlice state management, createAsyncThunk API requests, slice reducers, and global UI state synchronization.', iconName: 'Workflow', projectsUsing: ['Missile Health', 'DevScale Analytics'], relatedSkills: ['React.js', 'TypeScript', 'Context API'], featured: true },
+  { id: 's12', name: 'Context API', category: 'State', level: 82, experienceYears: 1.3, description: 'Lightweight React context state management, theme state persistence, and auth context hooks.', iconName: 'ToggleLeft', projectsUsing: ['Portfolio UI', 'AI Symptom Checker'], relatedSkills: ['React.js', 'Redux Toolkit'], featured: false },
 
-  // DevOps & Tools & AI
-  { id: 's13', name: 'Git & GitHub', category: 'Tools', level: 95, experienceYears: 6, description: 'Branching strategies (GitFlow), rebase workflows, pull request reviews, GitHub Actions CI/CD automation.', iconName: 'GitBranch', projectsUsing: ['All Projects'], relatedSkills: ['Docker', 'VS Code'], featured: true },
-  { id: 's14', name: 'Docker', category: 'DevOps', level: 84, experienceYears: 3, description: 'Multi-stage container builds, docker-compose orchestration, container networking, environment isolation.', iconName: 'Box', projectsUsing: ['Nexus Gateway'], relatedSkills: ['Node.js', 'MongoDB'], featured: false },
-  { id: 's15', name: 'AI Integration', category: 'AI', level: 88, experienceYears: 2, description: 'Generative AI APIs, structured JSON output validation, prompt engineering, RAG context retrieval.', iconName: 'Sparkles', projectsUsing: ['AI Symptom Checker', 'Portfolio AI Assistant'], relatedSkills: ['Node.js', 'REST APIs'], featured: true },
+  // Tools & DevOps & AI (Intermediate)
+  { id: 's13', name: 'Git & GitHub', category: 'Tools', level: 84, experienceYears: 1.3, description: 'Git branch management, pull requests, commit workflows, and version control collaboration.', iconName: 'GitBranch', projectsUsing: ['All Projects'], relatedSkills: ['VS Code', 'GitHub'], featured: true },
+  { id: 's14', name: 'Docker', category: 'DevOps', level: 68, experienceYears: 0.8, description: 'Basic container configurations, dockerfiles, and container environment setups.', iconName: 'Box', projectsUsing: ['Nexus Gateway'], relatedSkills: ['Node.js', 'MongoDB'], featured: false },
+  { id: 's15', name: 'AI Integration', category: 'AI', level: 75, experienceYears: 1.0, description: 'Generative AI REST endpoints integration, prompt formatting, and structured response parsing.', iconName: 'Sparkles', projectsUsing: ['AI Symptom Checker', 'Portfolio AI Assistant'], relatedSkills: ['Node.js', 'REST APIs'], featured: true },
 ];
 
 export const INITIAL_EXPERIENCES: Experience[] = [
   {
     id: 'e1',
-    company: 'Apex Digital Systems',
-    role: 'Senior Full-Stack Software Engineer',
-    period: '2024 - Present',
-    location: 'Remote',
+    company: 'Colan Infotech',
+    role: 'Full-Stack Developer',
+    period: 'July 2025 - Present',
+    location: 'Full-Time (from Nov 2025) | Intern (July 2025 - Nov 2025)',
     isCurrent: true,
     responsibilities: [
-      'Architected and led the development of high-throughput web applications using React, Redux Toolkit, Node.js, and MongoDB.',
-      'Designed versioned REST APIs serving 500k+ daily active requests with sub-100ms response latencies.',
-      'Integrated security protections including JWT token rotation, rate-limiting headers, input sanitization, and CORS enforcement.',
-      'Mentored 6 junior/mid-level frontend engineers on Redux state normalization and clean code patterns.'
+      'Joined Colan Infotech as a Full-Stack Developer Intern in July 2025 and promoted to Full-Time Engineer position in November 2025.',
+      'Architecting and delivering full-stack web applications using React.js, Redux Toolkit, Node.js, Express.js, and MongoDB.',
+      'Building versioned RESTful API microservices with Zod payload validation, rate-limiting, and JWT authentication.',
+      'Collaborating on enterprise production platforms including EHR patient management systems and reactive web dashboards.'
     ],
     achievements: [
-      'Reduced web application bundle size by 42% using dynamic import code-splitting.',
-      'Improved MongoDB query execution speed by 3.5x via strategic indexing and aggregation refactoring.'
+      'Promoted from Intern to Full-Time Full-Stack Developer in Nov 2025 following outstanding internship technical delivery.',
+      'Developed responsive UI components and Express backend APIs with optimized MongoDB query pipelines.'
     ],
-    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'TypeScript', 'REST APIs', 'Docker']
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'JavaScript', 'REST APIs', 'Tailwind CSS']
   },
   {
     id: 'e2',
-    company: 'HealthTech Innovations',
-    role: 'Full-Stack Developer (MERN)',
-    period: '2022 - 2024',
-    location: 'Hybrid',
+    company: 'Aspirasys',
+    role: 'Full-Stack Developer',
+    period: 'Nov 2024 - June 2025',
+    location: 'On-site (7 Months)',
     isCurrent: false,
     responsibilities: [
-      'Engineered core healthcare modules for Missile Health platform including doctor-patient scheduling and prescription workflows.',
-      'Built responsive, accessible UI components with React, Tailwind CSS, and Framer Motion adhering to WCAG AAA contrast guidelines.',
-      'Developed express backend services connected to MongoDB for real-time medical triage categorization.'
+      'Engineered interactive single-page web applications using React.js, JavaScript (ES6+), and REST API integration.',
+      'Assisted in designing MongoDB document schemas, Mongoose models, and Express controller functions.',
+      'Created mobile-responsive UI layouts adhering to modern UI/UX design specifications and WCAG accessibility standards.'
     ],
     achievements: [
-      'Successfully deployed AI Healthcare Symptom Checker microservice reducing ER non-emergency check-ins.',
-      'Maintained 99.9% uptime across production MongoDB Atlas databases.'
+      'Delivered core frontend components and API endpoints for internal client management portals.',
+      'Refactored legacy web interfaces into reusable, modular React component architecture.'
     ],
-    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'REST API', 'Tailwind CSS', 'Git']
-  },
-  {
-    id: 'e3',
-    company: 'CloudScale Solutions',
-    role: 'Frontend Developer',
-    period: '2021 - 2022',
-    location: 'On-site',
-    isCurrent: false,
-    responsibilities: [
-      'Built interactive single-page web applications using React.js, Redux, and modern JavaScript (ES6+).',
-      'Collaborated with UI/UX designers to translate Figma mockups into pixel-perfect responsive components.',
-      'Integrated Axios client layers with backend REST endpoints featuring automatic request retries and global toast notifications.'
-    ],
-    achievements: [
-      'Refactored legacy jQuery application into modular React components.',
-      'Achieved 95+ Lighthouse performance scores across all client landing pages.'
-    ],
-    technologies: ['React.js', 'JavaScript', 'Redux', 'HTML5', 'CSS3', 'REST APIs', 'Git']
+    technologies: ['React.js', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'HTML5', 'CSS3', 'Git']
   }
 ];
 

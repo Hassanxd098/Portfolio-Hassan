@@ -19,7 +19,7 @@ const initialState: ProjectState = {
 
 export const fetchProjects = createAsyncThunk(
   'projects/fetchProjects',
-  async (category?: string, { rejectWithValue }) => {
+  async (category: string | undefined, { rejectWithValue }) => {
     try {
       const data = await portfolioService.getProjects(category);
       return data;

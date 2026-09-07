@@ -5,58 +5,40 @@ import { ApiResponse } from '../utils/apiResponse.js';
 const mockExperiences = [
   {
     id: 'e1',
-    company: 'Apex Digital Systems',
-    role: 'Senior Full-Stack Software Engineer',
-    period: '2024 - Present',
-    location: 'Remote',
+    company: 'Colan Infotech',
+    role: 'Full-Stack Developer',
+    period: 'July 2025 - Present',
+    location: 'Full-Time (from Nov 2025) | Intern (July 2025 - Nov 2025)',
     isCurrent: true,
     responsibilities: [
-      'Architected and led the development of high-throughput web applications using React, Redux Toolkit, Node.js, and MongoDB.',
-      'Designed versioned REST APIs serving 500k+ daily active requests with sub-100ms response latencies.',
-      'Integrated security protections including JWT token rotation, rate-limiting headers, input sanitization, and CORS enforcement.',
-      'Mentored 6 junior/mid-level frontend engineers on Redux state normalization and clean code patterns.'
+      'Joined Colan Infotech as a Full-Stack Developer Intern in July 2025 and promoted to Full-Time Engineer position in November 2025.',
+      'Architecting and delivering full-stack web applications using React.js, Redux Toolkit, Node.js, Express.js, and MongoDB.',
+      'Building versioned RESTful API microservices with Zod payload validation, rate-limiting, and JWT authentication.',
+      'Collaborating on enterprise production platforms including EHR patient management systems and reactive web dashboards.'
     ],
     achievements: [
-      'Reduced web application bundle size by 42% using dynamic import code-splitting.',
-      'Improved MongoDB query execution speed by 3.5x via strategic indexing and aggregation refactoring.'
+      'Promoted from Intern to Full-Time Full-Stack Developer in Nov 2025 following outstanding internship technical delivery.',
+      'Developed responsive UI components and Express backend APIs with optimized MongoDB query pipelines.'
     ],
-    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'TypeScript', 'REST APIs', 'Docker']
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'JavaScript', 'REST APIs', 'Tailwind CSS']
   },
   {
     id: 'e2',
-    company: 'HealthTech Innovations',
-    role: 'Full-Stack Developer (MERN)',
-    period: '2022 - 2024',
-    location: 'Hybrid',
+    company: 'Aspirasys',
+    role: 'Full-Stack Developer',
+    period: 'Nov 2024 - June 2025',
+    location: 'On-site (7 Months)',
     isCurrent: false,
     responsibilities: [
-      'Engineered core healthcare modules for Missile Health platform including doctor-patient scheduling and prescription workflows.',
-      'Built responsive, accessible UI components with React, Tailwind CSS, and Framer Motion adhering to WCAG AAA contrast guidelines.',
-      'Developed express backend services connected to MongoDB for real-time medical triage categorization.'
+      'Engineered interactive single-page web applications using React.js, JavaScript (ES6+), and REST API integration.',
+      'Assisted in designing MongoDB document schemas, Mongoose models, and Express controller functions.',
+      'Created mobile-responsive UI layouts adhering to modern UI/UX design specifications and WCAG accessibility standards.'
     ],
     achievements: [
-      'Successfully deployed AI Healthcare Symptom Checker microservice reducing ER non-emergency check-ins.',
-      'Maintained 99.9% uptime across production MongoDB Atlas databases.'
+      'Delivered core frontend components and API endpoints for internal client management portals.',
+      'Refactored legacy web interfaces into reusable, modular React component architecture.'
     ],
-    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'REST API', 'Tailwind CSS', 'Git']
-  },
-  {
-    id: 'e3',
-    company: 'CloudScale Solutions',
-    role: 'Frontend Developer',
-    period: '2021 - 2022',
-    location: 'On-site',
-    isCurrent: false,
-    responsibilities: [
-      'Built interactive single-page web applications using React.js, Redux, and modern JavaScript (ES6+).',
-      'Collaborated with UI/UX designers to translate Figma mockups into pixel-perfect responsive components.',
-      'Integrated Axios client layers with backend REST endpoints featuring automatic request retries and global toast notifications.'
-    ],
-    achievements: [
-      'Refactored legacy jQuery application into modular React components.',
-      'Achieved 95+ Lighthouse performance scores across all client landing pages.'
-    ],
-    technologies: ['React.js', 'JavaScript', 'Redux', 'HTML5', 'CSS3', 'REST APIs', 'Git']
+    technologies: ['React.js', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'HTML5', 'CSS3', 'Git']
   }
 ];
 
